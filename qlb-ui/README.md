@@ -2,8 +2,6 @@
 
 This project use [Vert.x](https://quarkus.io/guides/vertx) and [Quarkus](https://quarkus.io/) , to render a React Application
 
-![DMN model](docs/loan-preapproval_dmn.png)
-
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
