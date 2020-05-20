@@ -1,8 +1,8 @@
 # QLB UI
 
-This project use Vert.x and Quarkus, to render a React Application
+This project use [Vert.x](https://quarkus.io/guides/vertx) and [Quarkus](https://quarkus.io/) , to render a React Application
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+![DMN model](docs/loan-preapproval_dmn.png)
 
 ## Running the application in dev mode
 
@@ -30,6 +30,12 @@ The application is now runnable using:
 ```
 java -jar target/qlb-ui-1.0-runner.jar
 ```
+
+Open [http://localhost:8082](http://localhost:8082) to view it in the browser.
+
+![QLB home](docs/qlb-ui-home.png)
+
+![QLB pre-approval](docs/qlb-ui-preapproval.png)
 
 ## Creating a native executable
 

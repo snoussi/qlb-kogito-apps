@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.redhat.demo.qlb</groupId>
+    <artifactId>qlb-apps</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+
+    <name>Quick Loan Bank Apps</name>
+    <description>Quick Loan Bank demo showcasing Kogito and Quarkus feautres for Cloud Native Business Automation Applications</description>
+
+    <properties>
+        <path.to.frontend.app>../packages/qlb-react-app</path.to.frontend.app>
+        <quarkus.version>1.4.1.Final</quarkus.version>
+        <kogito.version>0.10.1</kogito.version>
+        <version.node>v11.6.0</version.node>
+        <version.npm>6.10.3</version.npm>
+        <version.yarn>v1.19.1</version.yarn>
+        <frontend.plugin.version>1.9.1</frontend.plugin.version>
+        <surefire.plugin.version>2.22.1</surefire.plugin.version>
+        <compiler.plugin.version>3.8.1</compiler.plugin.version>
+        <resources.plugin.version>3.1.0</resources.plugin.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>11</maven.compiler.release>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>org.kie.kogito</groupId>
+                <artifactId>kogito-bom</artifactId>
+                <version>${kogito.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>io.quarkus</groupId>
+                <artifactId>quarkus-bom</artifactId>
+                <version>${quarkus.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <modules>
+        <module>qlb-loan-preapproval-dmn</module>
+        <module>qlb-ui</module>
+    </modules>
+
+</project>
