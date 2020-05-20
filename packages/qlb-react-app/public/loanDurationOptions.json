@@ -1,0 +1,42 @@
+[
+  {
+    "value": "please choose",
+    "label": "Please Choose",
+    "disabled": true
+  },
+  {
+    "value": 5,
+    "label": "5 years",
+    "disabled": false
+  },
+  {
+    "value": 7,
+    "label": "7 years",
+    "disabled": false
+  },
+  {
+    "value": 10,
+    "label": "10 years",
+    "disabled": false
+  },
+  {
+    "value": 12,
+    "label": "12 years",
+    "disabled": false
+  },
+  {
+    "value": 15,
+    "label": "15 years",
+    "disabled": false
+  },
+  {
+    "value": 20,
+    "label": "20 years",
+    "disabled": false
+  },
+  {
+    "value": 25,
+    "label": "25 years",
+    "disabled": false
+  }
+]

@@ -1,0 +1,38 @@
+# Node and React
+node_modules/
+dist/
+node/
+coverage/
+build/
+out/
+**/yarn.lock
+**/stats.json
+package-lock.json
+
+# Eclipse, Netbeans, vsCode and IntelliJ files
+/.*
+!.github
+!.gitignore
+/nbproject
+/*.ipr
+/*.iws
+.idea
+**/*.iml
+.classpath
+.project
+.settings
+**/junit.xml
+.vscode/
+
+# Mac
+**/.DS_Store
+
+# Maven
+log/
+target/
+
+# Other
+*.log*
+tmp/
+bin/
+local/

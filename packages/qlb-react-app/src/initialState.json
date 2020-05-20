@@ -1,0 +1,21 @@
+{
+  "applicant": {
+    "monthlyIncome": 4000,
+    "creditScore": 300,
+    "name": "Lucien Bramard",
+    "age": 16
+  },
+  "loan": {
+    "amount": 300000,
+    "duration": 20
+  },
+  "preApproval": {
+    "rejectionReasons": [
+      "Non eligible age",
+      "High debt ratio (31.68%)",
+      "Insufficient credit score (min required is 500)"
+    ],
+    "result": false
+  },
+  "interestRate": 1.39
+}
