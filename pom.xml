@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
@@ -13,13 +13,13 @@
 
     <properties>
         <path.to.frontend.app>../packages/qlb-react-app</path.to.frontend.app>
-        <quarkus.version>1.4.1.Final</quarkus.version>
-        <kogito.version>0.10.1</kogito.version>
+        <quarkus.version>1.10.0.Final</quarkus.version>
+        <kogito.version>1.0.0.Final</kogito.version>
         <version.node>v11.6.0</version.node>
         <version.npm>6.10.3</version.npm>
         <version.yarn>v1.19.1</version.yarn>
         <frontend.plugin.version>1.9.1</frontend.plugin.version>
-        <surefire.plugin.version>2.22.1</surefire.plugin.version>
+        <surefire.plugin.version>2.22.2</surefire.plugin.version>
         <compiler.plugin.version>3.8.1</compiler.plugin.version>
         <resources.plugin.version>3.1.0</resources.plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

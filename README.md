@@ -23,5 +23,5 @@ Open [http://localhost:8082](http://localhost:8082) to view it in the browser.
 
 ![QLB pre-approval](qlb-ui/docs/qlb-ui-preapproval.png)
 
-> [NOTE]
+> [!TIP]
 > For detailed instructions on how to deploy and run this demo, please check the instructions available with each module
