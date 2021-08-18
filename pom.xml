@@ -13,12 +13,12 @@
 
     <properties>
         <path.to.frontend.app>../packages/qlb-react-app</path.to.frontend.app>
-        <quarkus.version>1.10.0.Final</quarkus.version>
-        <kogito.version>1.0.0.Final</kogito.version>
+        <quarkus.version>1.11.7.Final-redhat-00009</quarkus.version>
+        <kogito.version>1.5.0.redhat-00006</kogito.version>
         <version.node>v11.6.0</version.node>
         <version.npm>6.10.3</version.npm>
         <version.yarn>v1.19.1</version.yarn>
-        <frontend.plugin.version>1.9.1</frontend.plugin.version>
+        <frontend.plugin.version>1.12.0</frontend.plugin.version> <!-- https://github.com/eirslett/frontend-maven-plugin -->
         <surefire.plugin.version>2.22.2</surefire.plugin.version>
         <compiler.plugin.version>3.8.1</compiler.plugin.version>
         <resources.plugin.version>3.1.0</resources.plugin.version>
@@ -38,12 +38,20 @@
             </dependency>
 
             <dependency>
+                <groupId>com.redhat.quarkus</groupId>
+                <artifactId>quarkus-universe-bom</artifactId>
+                <version>${quarkus.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- <dependency>
                 <groupId>io.quarkus</groupId>
                 <artifactId>quarkus-bom</artifactId>
                 <version>${quarkus.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
+            </dependency> -->
 
         </dependencies>
     </dependencyManagement>

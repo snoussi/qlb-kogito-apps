@@ -13,7 +13,7 @@ mvn package
 # Start pre-approval dmn decision service
 java -jar  qlb-loan-preapproval-dmn/target/qlb-loan-preapproval-dmn-1.0-runner.jar
 
-# Start QLB UI
+# In another console, start the QLB UI
 java -jar  qlb-ui/target/qlb-ui-1.0-runner.jar
 ```
 
