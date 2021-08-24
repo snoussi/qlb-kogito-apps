@@ -4,10 +4,10 @@ import {
     Nav,
     NavList,
     NavItem,
-    NavVariants,
     Page,
     PageHeader,
     PageSidebar,
+    PageHeaderTools,
     SkipToContent
 } from '@patternfly/react-core';
 import BrandComponent from './BrandComponent';
@@ -68,16 +68,18 @@ const AppLayout: React.FC<{}> = (props: any) => {
         <PageHeader
             logo={<BrandComponent />}
             logoProps={logoProps}
-            toolbar={<PageToolbarComponent />}
+            headerTools={<PageHeaderTools><PageToolbarComponent /></PageHeaderTools>}
             showNavToggle
             isNavOpen={isNavOpen}
             onNavToggle={isMobileView ? onNavToggleMobile : onNavToggle}
         />
     );
 
+
+    
     const Navigation = (
         <Nav id="nav-primary-simple" theme="dark">
-            <NavList id="nav-list-simple" variant={NavVariants.default}>
+            <NavList id="nav-list-simple">
                 {routes.map((route, idx) => route.label && (
                     <NavItem key={`${route.label}-${idx}`} id={`${route.label}-${idx}`}>
                         <NavLink exact to={route.path} activeClassName="pf-m-current">{route.label}</NavLink>
