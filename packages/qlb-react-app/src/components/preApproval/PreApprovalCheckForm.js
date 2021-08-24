@@ -98,8 +98,11 @@ class PreApprovalCheckForm extends React.Component {
       return;
     }
     console.log(this.state);
+
+    const {REACT_APP_PREAPPROVAL_SERVICE_HTTP_URL} = process.env;
+
     axios
-      .post(`http://localhost:8081/loan-preapproval`, {
+      .post(`${REACT_APP_PREAPPROVAL_SERVICE_HTTP_URL}/loan-preapproval`, {
         Applicant: {
           "Monthly Income": this.state.applicantMonthlyIncome,
           "Credit Score": this.state.applicantCreditScore,

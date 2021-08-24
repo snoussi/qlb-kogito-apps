@@ -59,6 +59,28 @@ To run the generated native executable, generated in `target/`, execute
 
 Note: This does not yet work on Windows, GraalVM and Quarkus should be rolling out support for Windows soon.
 
+### Openshift deployment
+
+#### Prerequisites
+
+- The RHPAM Kogito Operator is installed in a new project
+- The `oc` OpenShift CLI is installed and you are logged in to the relevant OpenShift cluster. For oc installation and login instructions, see the OpenShift documentation.
+- You have access to the OpenShift web console with the necessary permissions to create and edit `KogitoBuild` and `KogitoRuntime`.
+
+```bash
+# Build the project
+mvn clean package
+
+# Create KogitoBuilds and KogitoRuntime for a binary deployment
+oc create -f operator/qlb-loan-preapproval-dmn.yml
+
+# Upload the built binary using the following command
+oc start-build qlb-loan-preapproval-dmn --from-dir=target/
+
+# Wait for the pods to be up & running, then locate the service route using this command
+echo http://$(oc get route qlb-loan-preapproval-dmn --template='{{ .spec.host }}')/swagger-ui
+```
+
 ## OpenAPI (Swagger) documentation
 
 The exposed service [OpenAPI specification](https://swagger.io/docs/specification) is generated at

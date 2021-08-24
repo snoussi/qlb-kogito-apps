@@ -15,8 +15,8 @@
         <path.to.frontend.app>../packages/qlb-react-app</path.to.frontend.app>
         <quarkus.version>1.11.7.Final-redhat-00009</quarkus.version>
         <kogito.version>1.5.0.redhat-00006</kogito.version>
-        <version.node>v11.6.0</version.node>
-        <version.npm>6.10.3</version.npm>
+        <version.node>v16.7.0</version.node>
+        <version.npm>7.20.3</version.npm>
         <version.yarn>v1.19.1</version.yarn>
         <frontend.plugin.version>1.12.0</frontend.plugin.version> <!-- https://github.com/eirslett/frontend-maven-plugin -->
         <surefire.plugin.version>2.22.2</surefire.plugin.version>
