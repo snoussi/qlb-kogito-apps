@@ -19,6 +19,7 @@ import {
   EmptyStateBody,
   Divider,
   Card,
+  CardTitle,
   CardHeader,
   CardBody,
 } from "@patternfly/react-core";
@@ -154,13 +155,14 @@ class PreApprovalCheckForm extends React.Component {
       if (result) {
         var title = "Pre-approved with an interest rate of " + interestRate;
         alert = (
+          
           <Card>
             <CardHeader>
-              <Title headingLevel="h2" size="xl">
+              <CardTitle headingLevel="h2" size="xl">
                 Result
-              </Title>
-              <Divider />
+              </CardTitle>
             </CardHeader>
+            <Divider />
             <CardBody>
               <AlertGroup>
                 <Alert
@@ -176,11 +178,11 @@ class PreApprovalCheckForm extends React.Component {
         alert = (
           <Card>
             <CardHeader>
-              <Title headingLevel="h2" size="xl">
+              <CardTitle headingLevel="h2" size="xl">
                 Result
-              </Title>
-              <Divider />
+              </CardTitle>
             </CardHeader>
+            <Divider />
             <CardBody>
               <AlertGroup>
                 <Alert
@@ -205,7 +207,7 @@ class PreApprovalCheckForm extends React.Component {
 
     return (
       <Bullseye>
-        <Stack gutter="md">
+        <Stack hasGutter="true">
           <StackItem>
             <Title headingLevel="h1" size="4xl">
               Loan Pre-Approval Check
