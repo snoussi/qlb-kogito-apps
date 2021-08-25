@@ -16,9 +16,11 @@
     "react-router-dom": "^5.2.0",
     "react-router-last-location": "^2.0.1",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1",
     "ts-loader": "^7.0.2",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "web-vitals": "^1.0.1",
+    "@types/react": "^16.8.0",
+    "@types/react-dom": "^16.8.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -46,7 +48,7 @@
   },
   "devDependencies": {
     "@types/react": "^16.8.0",
-    "@types/react-dom": "^16.8.0",
+    "@types/react-dom": "^16.9.14",
     "source-map-loader": "^0.2.4"
   }
 }
