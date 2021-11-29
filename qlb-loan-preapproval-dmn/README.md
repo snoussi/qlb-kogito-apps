@@ -5,7 +5,7 @@ Demonstrates DMN on Kogito capabilities, including REST interface code generatio
 
 ## Decision Service definition
 
-![DMN model](docs/loan-preapproval_dmn.png)
+![DMN model](src/main/resources/com/redhat/demo/qlb/loan-preapproval-svg.svg)
 
 ## Installing and Running
 
